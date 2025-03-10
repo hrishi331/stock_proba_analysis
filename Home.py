@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Probabilistic analysis of selected stock".upper())
 
-st.page_link(r"pages\query_1.py",label='**Query 1**')
+st.page_link(r"pages/query_1.py",label='**Query 1**')
 text_1 = """Find probability of selected parameter % change(e.g.Close,Open,...etc) 
 lying within given band formed by lower and upper limit provided
 by user
