@@ -13,7 +13,7 @@ by user
 """
 st.write(text_2)
 st.write('Example')
-st.image('images\query 2.JPG',width=500)
+st.image('images/query 2.JPG',width=500)
 
 script = st.selectbox('Script',pd.read_csv('nifty500_stocklist.csv'),index=0)
 
