@@ -50,8 +50,8 @@ if df.shape[0]>0 and script!='-':
 
 
     param = st.radio('Select OLHC parameter',df.columns)
-    ll = st.number_input(r'Enter lower limit (% change)',max_value=0)
-    ul =  st.number_input(r'Enter upper limit (% change)',min_value=0)
+    ll = st.number_input(r'Enter lower limit (% change)')
+    ul =  st.number_input(r'Enter upper limit (% change)')
 
     data = df[(df[param]>ll) & (df[param]<ul)]
     resultant_obs = data.shape[0]
