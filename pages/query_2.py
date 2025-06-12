@@ -68,6 +68,7 @@ if df.shape[0]>0 and script!='-':
         bar.success('Task Completed!!')
 
         st.subheader("RESULT")
+        st.write("From the given data window")
         st.write(f"Probability of % change in {param} w.r.t. prev {param}")
         st.write(f"for {script}")
         st.write(f"lying out of range of {ll} % to {ul}% is")
