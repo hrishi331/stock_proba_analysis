@@ -68,7 +68,7 @@ if df.shape[0]>0 and script!='-':
 
         st.subheader("RESULT")
         st.write("From the given data window")
-        st.write(f"Probability of % change in {param} w.r.t. prev {param}")
+        st.write(f"probability of % change in {param} w.r.t. prev {param}")
         st.write(f"for {script}")
         st.write(f"lying below {lim} % is")
         st.write(f"{proba} %")
