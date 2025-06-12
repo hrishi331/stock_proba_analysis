@@ -26,6 +26,7 @@ end_date = st.date_input('to')
 # download data
 df = yf.download(script,start=start_date,end=end_date).iloc[::-1]
 
+
 if df.shape[0]>0 and script!='-':
     # Dataframe cleaning 
 
@@ -47,6 +48,7 @@ if df.shape[0]>0 and script!='-':
 
     # Dropping nulls 
     df.dropna(inplace=True)
+    
 
 
     param = st.radio('Select OLHC parameter',df.columns)
@@ -68,7 +70,7 @@ if df.shape[0]>0 and script!='-':
         bar.success('Task Completed!!')
 
         st.subheader("RESULT")
-        st.write(f"Probability of % change in {param}")
+        st.write(f"Probability of % change in {param} w.r.t. prev {param}")
         st.write(f"lying in between {ll} % to {ul}% is")
         st.write(f"{proba} %")
 else:

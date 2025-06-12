@@ -67,7 +67,7 @@ if df.shape[0]>0 and script!='-':
         bar.success('Task Completed!!')
 
         st.subheader("RESULT")
-        st.write(f"Probability of % change in {param}")
+        st.write(f"Probability of % change in {param} w.r.t. prev {param}")
         st.write(f"lying above {lim} % is")
         st.write(f"{proba} %")
 else:

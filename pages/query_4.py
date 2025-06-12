@@ -8,7 +8,7 @@ import time
 
 st.title("Query 4")
 text_4 = """Find probability of selected parameter % change(e.g.Close,Open,...etc) 
-lying above limit provided by user
+lying below limit provided by user
 """
 st.write(text_4)
 st.write('Example')
@@ -67,7 +67,7 @@ if df.shape[0]>0 and script!='-':
         bar.success('Task Completed!!')
 
         st.subheader("RESULT")
-        st.write(f"Probability of % change in {param}")
+        st.write(f"Probability of % change in {param} w.r.t. prev {param}")
         st.write(f"lying below {lim} % is")
         st.write(f"{proba} %")
 else:
